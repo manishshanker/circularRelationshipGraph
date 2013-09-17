@@ -1,0 +1,98 @@
+<html>
+<head>
+<script src="raphael-min.js" type="text/javascript"></script>
+<script src="circular-relationship-graph.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="relationshipChart" style="border:1px solid red; display: inline-block;"></div>
+<script type="text/javascript">
+	var rsg = new RSG({
+		widthAndHeight: 300,
+		uniqueNodeCount: 18,
+		maxStrength: 10,
+		relationships: [
+			{
+				from: "A1",
+				to: "B1",
+				strength: 5
+			},
+			{
+				from: "A2",
+				to: "B1",
+				strength: 8
+			},
+			{
+				from: "A3",
+				to: "B4",
+				strength: 4
+			},
+			{
+				from: "A4",
+				to: "B1",
+				strength: 1
+			},
+			{
+				from: "A9",
+				to: "B8",
+				strength: 2
+			},
+			{
+				from: "A5",
+				to: "B7",
+				strength: 3
+			},
+			{
+				from: "A8",
+				to: "B4",
+				strength: 4
+			},
+			{
+				from: "A11",
+				to: "B10",
+				strength: 1
+			},
+			{
+				from: "A9",
+				to: "B9",
+				strength: 2
+			},
+			{
+				from: "A10",
+				to: "B7",
+				strength: 3
+			},
+			{
+				from: "A9",
+				to: "B1",
+				strength: 2
+			},
+			{
+				from: "A5",
+				to: "B2",
+				strength: 3
+			},
+			{
+				from: "A8",
+				to: "B3",
+				strength: 4
+			},
+			{
+				from: "A11",
+				to: "B1",
+				strength: 1
+			},
+			{
+				from: "A9",
+				to: "B1",
+				strength: 2
+			},
+			{
+				from: "A10",
+				to: "B5",
+				strength: 3
+			}
+		]
+	}).plot();
+</script>
+</body>
+</html>
